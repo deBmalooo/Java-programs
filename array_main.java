@@ -78,6 +78,7 @@ public class array_main{
 
     public static void main(String args[]){
         int ar[]={2,4,6,8,10};
+        //changes done
         //subarray(ar);
         // printpairs(ar);
         //int key=10;
