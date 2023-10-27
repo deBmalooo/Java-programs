@@ -126,19 +126,19 @@ public class adv_pattern {
                 System.out.print(" ");
             }
             for(j=1;j<=(2*i-1);j++){
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println();
         }
     }
     public static void main(String arsgs[]){
-        hollowsquare(4,5);
-        pattern_2(4);
-        floydtriangle(5);
-        one_zero(5);
+        // hollowsquare(4,5);
+        // pattern_2(4);
+        // floydtriangle(5);
+        // one_zero(5);
         butterfly(4);
-        solid_rhombus(5);
-        hollow_rhombus(5);
-        diamond(4);
+        // solid_rhombus(5);
+        // hollow_rhombus(5);
+        // diamond(4);
     }
 }
