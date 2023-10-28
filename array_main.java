@@ -134,19 +134,19 @@ public class array_main{
     }
     public static void main(String args[]){
         int ar[]={-1,-3,4,-1,-2,1,5,-3};
-        kadanes_max_subarray(ar);
-        lsum_subarrayBRUTEFORCE(ar);
-        prefixsum(ar);
-        subarray(ar);
-        printpairs(ar);
-        int key=10;
+        // kadanes_max_subarray(ar);
+        // lsum_subarrayBRUTEFORCE(ar);
+        // prefixsum(ar);
+        // subarray(ar);
+        // printpairs(ar);
+        // int key=10;
         Rev_array(ar);
-        for(int i=0;i<ar.length;i++){
-            System.out.print(ar[i]+" ");
-        }
-        System.out.println();
-        System.out.println("Index for key is : "+bin_Search(ar, key));
-        int largest_num=largest(ar);
-        System.out.println("The LARGEST in the array is:"+largest_num);
-    }
+//         for(int i=0;i<ar.length;i++){
+//             System.out.print(ar[i]+" ");
+//         }
+//         System.out.println();
+//         System.out.println("Index for key is : "+bin_Search(ar, key));
+//         int largest_num=largest(ar);
+//         System.out.println("The LARGEST in the array is:"+largest_num);
+     }
 }
