@@ -7,6 +7,7 @@ public class sorting {
             }
 
         }
+        return -1;
     }
     public static void main(String args[]){
         int array[]={5,4,1,3,2};
