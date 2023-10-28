@@ -183,7 +183,7 @@ public class sp1 {
         }
     }
     public static void maxsum_subarray(int ar[]){
-        int len=ar.length-1;int max_sum=Integer.MIN_VALUE;
+        int max_sum=Integer.MIN_VALUE;
         for(int i=0;i<ar.length;i++){
             for(int j=i;j<ar.length;j++){
                 int sum=0;
