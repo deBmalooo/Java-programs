@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class twod_array {
     public static void display(int matrix[][]){
