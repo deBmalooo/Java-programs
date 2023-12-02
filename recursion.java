@@ -89,7 +89,7 @@ public class recursion {
        //factorial(5,1);   
        //System.out.print(factorial(5));
        //System.out.print(sum_num(5));
-        int arr[]={1,2,3,4,5,6,4,8};
+        //int arr[]={1,2,3,4,5,6,4,8};
         //System.out.println(fibonacci(5));
         //System.out.println(isSorted(arr, 0));
         //System.out.print(firstOccurence(arr, 4, 0));
