@@ -1,13 +1,34 @@
+import javax.swing.DefaultBoundedRangeModel;
+
 public class oops {
     public static void main(String args[]){
         Pen p1 = new Pen(); // a constructor is called p1
-        p1.setColor("Red");
+        p1.setColor("Red");  // Calling the function.
+        System.out.println(p1.getColor());
+
+        BankAccount myAcc= new BankAccount();
+        myAcc.username="Debb";
+        System.out.println(myAcc.username);
+        myAcc.setPassw("shfsjfhs");
+    }
+}
+class BankAccount{
+    public String username;
+    private String password;
+    public void setPassw(String pwd){
+        password=pwd;
     }
 }
 class Pen{
-    String color;
-    int tip;
+    private String color;
+    private int tip;
 
+    String getColor(){
+        return this.color;
+    }
+    int getTip(){
+        return this.tip;
+    }
     void setColor(String newColor){
         color=newColor;
     }
