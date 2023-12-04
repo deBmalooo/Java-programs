@@ -36,18 +36,19 @@ public class codevita_A {
     }
     public static void main(String args[]){
         int c=0;
-        Scanner sc=new Scanner(System.in);
-        //Input
-        int len=sc.nextInt();
-        if(len>=2 && len<=25){
-            //Entering the array
-            int ar[]=new int[len];
-            for(int i=0;i<len;i++){
-                ar[i]=sc.nextInt();
-            }
-            int key=sc.nextInt();
-            if(key>=1 && key<=len){
-                max_f(ar,key-1,c);
+        try (Scanner sc = new Scanner(System.in)) {
+            //Input
+            int len=sc.nextInt();
+            if(len>=2 && len<=25){
+                //Entering the array
+                int ar[]=new int[len];
+                for(int i=0;i<len;i++){
+                    ar[i]=sc.nextInt();
+                }
+                int key=sc.nextInt();
+                if(key>=1 && key<=len){
+                    max_f(ar,key-1,c);
+                }
             }
         }
     } 

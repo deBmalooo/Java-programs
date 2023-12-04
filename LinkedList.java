@@ -15,7 +15,16 @@ public class LinkedList {
     public static void main(String args[]){
         LinkedList ll= new LinkedList();
         // ll.head=new Node(1);
-        // ll.head.next=new Node(2);   This can be used but too hasty rather do by creating a method
+        // ll.head.next=new Node(2);   This can be used but too hasty rather do by creating a method/function
 
+    }
+
+    public void addFirst(int i) {
+    }
+
+    public void addLast(int i) {
+    }
+
+    public void print() {
     }
 }
