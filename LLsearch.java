@@ -1,8 +1,8 @@
-public class LL_addFandL {
+public class LLsearch {
     public static class Node{
         int data;
         Node next;
-        
+
         public Node(int data){
             this.data=data;
             this.next=null;
@@ -11,7 +11,6 @@ public class LL_addFandL {
     public static Node head;
     public static Node tail;
     public static int size;
-
     public void addFirst(int data){
 
         //step1 = create new node;
@@ -65,55 +64,30 @@ public class LL_addFandL {
         newNode.next=temp.next;
         temp.next=newNode;
     }
-    public int removefirst(){
-        if(size==0){
-            System.out.println("LL is empty");
-            return Integer.MIN_VALUE;
-        }else if(size==1){
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
+    public int search(int key){
+        Node temp = head;
+        int i = 0;
+
+        while(temp != null){
+            if(temp.data == key){
+                return i;
+            }
+            temp = temp.next;
+            i++;
         }
-        int val = head.data;
-        head = head.next; 
-        size --;
-        return val;
+        //when key not found
+        return -1;
     }
-    public int removeLast(){
-        if(size==0){
-            System.out.println("LL is empty");
-        }else if(size == 1){
-            int val = head.data;
-            head = tail = null;
-            size = 0;
-            return val;
-        }
-        // prev node: i=size-2
-        Node prev = head;
-        for(int i=0;i<size-2;i++){
-           prev = prev.next; 
-        }
-        int val = head.data;
-        prev.next = null;
-        tail=prev;
-        size--;
-        return val;
-    }
-    public static void main(String argss[]){
-        LL_addFandL ll = new LL_addFandL();
+    public static void main(String args[]){
+        LLsearch ll = new LLsearch();
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(3);
+        ll.addLast(9);
         ll.addLast(4);
-        ll.add_M(2,9);
+        ll.add_M(2,3);
 
         ll.print();
-
-        System.out.print(ll.size);
-        ll.removefirst();
-        ll.print();
-
-
+        System.out.println(ll.search(3));
+        System.out.println(ll.search(10));
     }
 }
