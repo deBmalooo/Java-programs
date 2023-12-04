@@ -18,4 +18,10 @@ public class LinkedList {
         // ll.head.next=new Node(2);   This can be used but too hasty rather do by creating a method
 
     }
+
+    public void addFirst(int i) {
+    }
+
+    public void addLast(int i) {
+    }
 }

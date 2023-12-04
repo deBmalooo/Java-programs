@@ -1,5 +1,3 @@
-import javax.swing.DefaultBoundedRangeModel;
-
 public class oops {
     public static void main(String args[]){
         Pen p1 = new Pen(); // a constructor is called p1
